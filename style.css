@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url('https://www.tapeciarnia.pl/tapety/normalne/tapeta-czarne-i-niebieskie-szesciany-w-3d.jpg');
+  margin-top: 5em;
+  padding: 20px;
+}
+
+.ui-sortable {                      
+  min-height: 80px;
+}  
+.create-column {
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  margin: 20px;
+  height: 45px;
+  width: 200px;
+  background: #056b93;
+  color: #fff;
+  border: 1px solid #1a1600;
+}
+.btn-delete {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 60px;
+  height: 22px;
+  border: 0;
+  background-color: #abc;
+  opacity: 0.7;
+  color: white;
+  border: 1px solid #1a1600;
+}
+.btn-delete:hover {
+  opacity: 1.0;
+  background-color: #313234;
+  cursor: pointer;
+}
+/* BOARD */
+.board h1 {
+  text-align: center;
+  font-size: 50px;
+  color: #1a1600;
+  text-shadow: 2px 2px #0177A7;
+}
+.column-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.add-card {
+  background-color: #000000;
+  border-radius: 5px;
+  color: #fff;
+}
+
+/* COLUMN */
+.column {
+  order: 1;
+  min-width: 300px;
+  min-height: 50vh;
+  background-color: #3366ff;
+  margin-left: 8px;
+  list-style: none;
+  position: relative;
+  border: 1px solid #1a1600;
+}
+.column-add-card {
+  cursor: pointer;
+  text-decoration: underline;
+  margin: 5px 8px;
+  display: block;
+}
+
+/* STYLE KARTY */
+.card {
+  box-sizing: border-box;
+  display: block;
+  height: 60px;
+  margin-bottom: 5px;
+  padding: 4px;
+  overflow: hidden;
+  position: relative;
+  background-color: #abc;
+  box-shadow: 5px 5px 3px #888888;
+  border-radius: 10px;
+  border: 1px solid #1a1600;
+  margin-right: 5px;
+}
+.card-list {
+  list-style: none;
+  margin: 5px;
+  padding: 0px;
+}
+.card-description {
+  margin: 2px 0;
+}
+.card-placeholder {
+  box-sizing: border-box;
+  display: block;
+  height: 60px;
+  margin-bottom: 5px;
+  border: 2px solid #d3d3d3;
+  background-color: #add8e6;
+}
+.btn-delete1 {
+  float: right;
+  height: 25px;
+  width: 25px;
+  background: darkgray;
+  font-weight: bold;
+  margin: 2px;
+  border-radius: 5px;
+}
