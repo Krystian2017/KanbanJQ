@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap');
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  background: url('https://www.tapeciarnia.pl/tapety/normalne/tapeta-czarne-i-niebieskie-szesciany-w-3d.jpg');
+  background: #fff url('https://www.tapeciarnia.pl/tapety/normalne/80621_niebieskie_tlo_swiatlo.jpg') no-repeat center;
   margin-top: 5em;
   padding: 20px;
+  font-family: 'Cinzel', serif;
 }
 
 .ui-sortable {                      
@@ -18,7 +22,9 @@ body {
   margin: 20px;
   height: 45px;
   width: 200px;
-  background: #056b93;
+  background-color: #2181BB;
+  /*80a5a5*/
+
   color: #fff;
   border: 1px solid #1a1600;
 }
@@ -26,8 +32,8 @@ body {
   position: absolute;
   right: 0;
   top: 0;
-  width: 60px;
-  height: 22px;
+  width: 30px;
+  height: 20px;
   border: 0;
   background-color: #abc;
   opacity: 0.7;
@@ -43,8 +49,8 @@ body {
 .board h1 {
   text-align: center;
   font-size: 50px;
-  color: #1a1600;
-  text-shadow: 2px 2px #0177A7;
+  color: #fff;
+  text-shadow: 2px 2px #000;
 }
 .column-container {
   display: flex;
@@ -59,10 +65,11 @@ body {
 
 /* COLUMN */
 .column {
+  padding: 10px;
   order: 1;
   min-width: 300px;
   min-height: 50vh;
-  background-color: #3366ff;
+  background-color: #abd;
   margin-left: 8px;
   list-style: none;
   position: relative;
@@ -75,20 +82,26 @@ body {
   display: block;
 }
 
+.column-title {
+  color: #fff;
+}
+
 /* STYLE KARTY */
 .card {
   box-sizing: border-box;
   display: block;
   height: 60px;
   margin-bottom: 5px;
-  padding: 4px;
+  padding: 8px;
   overflow: hidden;
   position: relative;
-  background-color: #abc;
+  color: #fff;
+  background-color: #2181BB;
   box-shadow: 5px 5px 3px #888888;
   border-radius: 10px;
   border: 1px solid #1a1600;
   margin-right: 5px;
+  letter-spacing: 1px;
 }
 .card-list {
   list-style: none;
@@ -96,7 +109,7 @@ body {
   padding: 0px;
 }
 .card-description {
-  margin: 2px 0;
+  margin: 10px 0;
 }
 .card-placeholder {
   box-sizing: border-box;
@@ -114,4 +127,7 @@ body {
   font-weight: bold;
   margin: 2px;
   border-radius: 5px;
+}
+.add-card {
+  background-color: #0B55A0;
 }
